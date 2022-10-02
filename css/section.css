@@ -4,7 +4,7 @@ section.inflab-integrated {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: red;
+  background-color: #fff;
   border-bottom: 1px solid #f1f3f5;
   z-index: 30;
 }
@@ -69,6 +69,13 @@ section.inflab-integrated
   margin-right: 2px;
   font-weight: 500;
   color: #858a8d;
+}
+
+section.inflab-integrated
+  .inflab-integrated__container
+  .inflab-integrated__service
+  svg {
+  margin-right: 4px;
 }
 
 section.inflab-integrated .inflab-integrated__links-right a {
