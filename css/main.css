@@ -1,5 +1,33 @@
 #main {
-  /* min-height: 800px; */
-  height: 300px;
+  min-height: 800px;
+}
+
+#main.sticky {
+  margin-top: 64px;
+}
+
+.section.we_are_header {
+  background-image: url(https://cdn.inflearn.com/public/langding_pages/weare/section_00_bg.png);
   background-color: #77cc98;
+  background-size: auto;
+  background-position: 50%;
+  color: #fff;
+}
+.hero-body {
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+
+.hero-body,
+.section {
+  padding: 3rem 1.5rem;
+}
+
+.container {
+  max-width: 780px;
+}
+
+.section.we_are_header h1 {
+  font-weight: 400;
+  font-size: 2rem;
 }
