@@ -6,7 +6,9 @@
   margin-top: 64px;
 }
 
-.section.we_are_header {
+/* section 0 */
+
+.pg___who-we-are .section.we_are_header {
   background-image: url(https://cdn.inflearn.com/public/langding_pages/weare/section_00_bg.png);
   background-color: #77cc98;
   background-size: auto;
@@ -27,7 +29,88 @@
   max-width: 780px;
 }
 
-.section.we_are_header h1 {
-  font-weight: 400;
+.pg___who-we-are .section.we_are_header h1 {
   font-size: 2rem;
+}
+
+/* section 1, 2, 3 */
+
+@media print, screen and (min-width: 769px) {
+  .columns:not(.is-desktop) {
+    display: flex;
+  }
+}
+
+.columns,
+.columns:last-child {
+  margin: 0;
+}
+
+.column {
+  display: block;
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding: 0.75rem;
+}
+
+@media print, screen and (min-width: 769px) {
+  .column.is-4,
+  .column.is-4-tablet {
+    flex: none;
+    width: 33.3333333333%;
+  }
+}
+
+.pg___who-we-are .section.story {
+  padding: 3rem 1.5rem 0;
+}
+
+.pg___who-we-are .section.story .column:last-child {
+  background-image: url(https://cdn.inflearn.com/public/langding_pages/weare/section_01_line.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  padding-bottom: 4.5rem;
+}
+
+.pg___who-we-are .section.story .column h1,
+.pg___who-we-are .section.story .column h2,
+.pg___who-we-are .section.story .column h3 {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.pg___who-we-are .section.story .column p {
+  color: #404040;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.pg___who-we-are .section.story .column p + p {
+  margin-top: 1rem;
+}
+
+.pg___who-we-are .section.story .column p + h2 {
+  margin-top: 1rem;
+}
+
+.pg___who-we-are .section.story .column p.from_inflearn {
+  padding-top: 1.6rem;
+  text-align: right;
+}
+
+/* section last */
+
+.pg___who-we-are .section.last {
+  padding-bottom: 5rem;
+  text-align: center;
+}
+
+.pg___who-we-are .section.last .brand_logo {
+  width: 7rem;
+  min-height: 2rem;
+}
+
+#icon_brand_logo path {
+  fill: #1dc078;
 }
