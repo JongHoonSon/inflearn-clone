@@ -1,0 +1,150 @@
+.navbar-link.is-active,
+.navbar-link:hover,
+a.navbar-item.is-active,
+a.navbar-item:hover {
+  background-color: #fafafa;
+  color: #1dc078;
+}
+
+.navbar-item {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.navbar-item.has-dropdown {
+  padding: 0;
+}
+
+#header nav.navbar .navbar-item.has-dropdown {
+  padding: 0;
+}
+
+.navbar-link,
+a.navbar-item {
+  cursor: pointer;
+}
+
+/* dropdown */
+
+.navbar-dropdown {
+  font-size: 0.875rem;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+}
+
+@media screen and (min-width: 769px) {
+  .navbar-dropdown {
+    background-color: #fff;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-top: 2px solid #dbdbdb;
+    box-shadow: 0 8px 8px rgb(0 10 18 / 10%);
+    display: none;
+    font-size: 0.875rem;
+    left: 0;
+    min-width: 100%;
+    position: absolute;
+    top: 100%;
+    z-index: 20;
+  }
+}
+
+.content ul {
+  list-style: disc outside;
+  margin-left: 2em;
+  margin-top: 1em;
+}
+
+.content--no-list-style ul {
+  list-style: none;
+  margin-left: unset;
+  margin-top: unset;
+}
+
+.content--no-list-style ul {
+  list-style: none;
+  margin-left: unset;
+  margin-top: unset;
+}
+
+@media screen and (min-width: 769px) {
+  .navbar-dropdown.is-boxed,
+  .navbar.is-spaced .navbar-dropdown {
+    border-radius: 6px;
+    border-top: none;
+    box-shadow: 0 8px 8px rgb(0 10 18 / 10%), 0 0 0 1px rgb(0 10 18 / 10%);
+    /* opacity 이용 */
+    /* display: block;
+    opacity: 0;
+    pointer-events: none; */
+
+    /* display: none 이용 */
+    display: none;
+
+    top: calc(100% + -4px);
+    transform: translateY(-5px);
+    transition-duration: 86ms;
+    transition-property: opacity, transform;
+  }
+}
+
+.navbar-dropdown.is-boxed,
+.navbar.is-spaced .navbar-dropdown {
+  transition: none;
+}
+
+@media screen and (min-width: 769px) {
+  .navbar-item.is-active .navbar-dropdown,
+  .navbar-item.is-hoverable:hover .navbar-dropdown {
+    display: block;
+  }
+}
+
+.has-dropdown.category_menu .navbar-dropdown.is-boxed {
+  width: 180px;
+  height: 410px;
+  border-radius: 0;
+  box-shadow: 8px 5px 8px 1px rgb(0 10 18 / 10%), 0 0 0 1px rgb(0 10 18 / 10%);
+}
+
+@media screen and (min-width: 769px) {
+  .navbar-item.is-active .navbar-dropdown.is-boxed,
+  .navbar-item.is-hoverable:hover .navbar-dropdown.is-boxed,
+  .navbar.is-spaced .navbar-item.is-active .navbar-dropdown,
+  .navbar.is-spaced .navbar-item.is-hoverable:hover .navbar-dropdown {
+    /* opacity 이용 */
+    /* opacity: 1;
+    pointer-events: auto; */
+    transform: translateY(0);
+
+    /* display: none 이용 */
+    display: block;
+  }
+}
+
+#header
+  nav.navbar
+  .desktop_container
+  .content
+  .navbar-menu
+  .navbar-dropdown
+  .navbar-item {
+  padding: 0.375rem 1rem;
+  white-space: nowrap;
+}
+
+.has-dropdown.category_menu .navbar-dropdown.is-boxed .step_menu {
+  display: none;
+  position: absolute;
+  top: 0;
+}
+
+.has-dropdown.category_menu .navbar-dropdown.is-boxed .step_2,
+.has-dropdown.category_menu .navbar-dropdown.is-boxed .step_2 .step_3 {
+  left: 180px;
+  width: 180px;
+}
+
+.has-dropdown.category_menu .navbar-dropdown.is-boxed > li:hover > .step_menu {
+  display: block;
+}

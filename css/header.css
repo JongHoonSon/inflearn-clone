@@ -18,6 +18,10 @@
   min-height: unset;
 }
 
+#header nav.navbar .navbar-item:hover {
+  background-color: inherit;
+}
+
 .navbar {
   background-color: #fff;
   min-height: 3.25rem;
